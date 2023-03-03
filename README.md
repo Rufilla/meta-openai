@@ -111,7 +111,7 @@ export OPENAI_API_KEY="<your openai api key>"
 Once you have set the API key, you can use the GPT API as follows:
 
 ```
-python3 /usr/bin/test_gpt.py
+python3 /usr/bin/test-gpt.py
 ```
 
 This will print something like the following:
@@ -140,9 +140,37 @@ This will print something like the following:
 
 Hey, it knows stuff!
 
+
+# Using the Whisper API
+
+The new OpenAI Whisper API allows for speech to text transcription and translation of speech into a host of languages.  Truly exciting for device makers!
+
+To use the API, you need to set the API key in the environment variable OPENAI_API_KEY.
+
+From the command line on a booted system you can set this up as follows:
+
+```
+export OPENAI_API_KEY="<your openai api key>"
+```
+
+Once you have set the API key, you can use the GPT API as follows:
+
+```
+python3 /usr/bin/test-whisper.py
+```
+
+This will print something like the following:
+
+```
+{
+  "text": "Mary had a little lamb, his fleece was white as snow, and everywhere that Mary went, the lamb was sure to go."
+}
+```
+
+
 # What's Next?
 
-We intend to keep this layer up-to-date, plus add in Whisper API, DALL-E2 and other useful interfaces, plus examples and step-by-step guides.
+We intend to keep this layer up-to-date, add DALL-E2 and other useful interfaces, plus examples and step-by-step guides.
 
 Let us know if you have any suggestions or feedback, or if you would like to contribute.  Please post any issues you have in the Issue tracker.
 
