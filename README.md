@@ -56,7 +56,7 @@ From the command line on a booted system you can set this up as follows:
 export OPENAI_API_KEY="<your openai api key>"
 ```
 
-Once you have set the API key, you can use the GPT API as follows:
+Once you have set the API key, you can use the ChatGPT API as follows:
 
 ```
 python3 /usr/bin/test_chatgpt.py
@@ -153,7 +153,7 @@ From the command line on a booted system you can set this up as follows:
 export OPENAI_API_KEY="<your openai api key>"
 ```
 
-Once you have set the API key, you can use the GPT API as follows:
+Once you have set the API key, you can use the Whisper API as follows:
 
 ```
 python3 /usr/bin/test-whisper.py
