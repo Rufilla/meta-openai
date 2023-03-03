@@ -1,6 +1,6 @@
 # Yocto meta-openai OpenAI Meta Layer
 
-Note: This is unofficial, created by Yocto project participants Rufilla Ltd.  It is not supported by OpenAI.
+Note: This is unofficial, created by Yocto project participants [Rufilla Ltd](https://rufilla.com).  It is not supported by OpenAI.
 
 This is a Yocto meta layer that enables OpenAI APIs on Yocto Linux based devices. 
 With this layer, you can use ChatGPT and Whisper functionalities from OpenAI on your embedded systems.
