@@ -139,3 +139,13 @@ This will print something like the following:
 ```
 
 Hey, it knows stuff!
+
+# What's Next?
+
+We intend to keep this layer up-to-date, plus add in Whisper API, DALL-E2 and other useful interfaces, plus examples and step-by-step guides.
+
+Let us know if you have any suggestions or feedback, or if you would like to contribute.  Please post any issues you have in the Issue tracker.
+
+Cheers! 
+
+The Rufilla team.
