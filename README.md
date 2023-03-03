@@ -35,8 +35,6 @@ This API also allows access to **Davinci**, a powerful AI model that can perform
 bitbake-layers add-layer meta-openai
 ```
 
-# Using the OpenAI Meta Layer
-
 ## Getting the OpenAI API key
 
 To use the OpenAI APIs, you need to get an API key.
@@ -46,7 +44,7 @@ To get an API key, you need to create an account on OpenAI's website.
 Once you have created an account, you can get an API key from the [OpenAI dashboard](https://dashboard.openai.com/).
 
 
-## Using the ChatGPT API
+# Using the ChatGPT API
 
 The ChatGPT API allows access to ChatGPT, a conversational agent that can chat with you using natural language.
 
