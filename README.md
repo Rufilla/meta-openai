@@ -1,8 +1,6 @@
-# Yocto OpenAI Meta Layer
+# Yocto meta-openai OpenAI Meta Layer
 
-Note: This is unofficial and not supported by OpenAI.
-
-# Yocto meta-openai
+Note: This is unofficial, created by Yocto project participants Rufilla Ltd.  It is not supported by OpenAI.
 
 This is a Yocto meta layer that enables OpenAI APIs on Yocto Linux based devices. 
 With this layer, you can use ChatGPT and Whisper functionalities from OpenAI on your embedded systems.
@@ -16,27 +14,31 @@ Yocto meta layers are repositories that contain related metadata (i.e. sets of i
 OpenAI APIs are a set of services that provide access to powerful artificial intelligence models developed by OpenAI. 
 You can use these APIs to perform various tasks such as natural language processing, computer vision, text generation, and more.
 
+## What is the Davinci GPT 3.0 API?
+
+This API allows access to Davinci, a powerful AI model that can perform a variety of tasks such as text generation, text classification, and more.
+
 ## What is the ChatGPT API?
 
 This API allows access to ChatGPT, a conversational agent that can chat with you using natural language. 
 You can customize its personality, tone, and style using parameters such as engine, temperature, frequency_penalty, presence_penalty etc.
 
-The API was officially released on 2nd March 2022 - so it's work in progress in this layer :-)
+The ChatGPT API was officially released on 2nd March 2022 - so it's work in progress in this layer :-)
 
 Please see the corresponding sections below for details.
 
-# Dependencies
+## Dependencies
 
-  URI: git://git.openembedded.org/meta-openembedded
-  branch: Langdale
-  Add the meta-openembedded/meta-python layer to your build
+* URI: git://git.openembedded.org/meta-openembedded
+  * branch: Langdale
+  * Add the meta-openembedded/meta-python layer to your build
 
 
-# Adding the meta-openai layer to your build
+## Adding the meta-openai layer to your build
 
 Run 'bitbake-layers add-layer meta-openai'
 
-# Using the GPT API
+# Using the Davinci GPT 3.0 API
 
 ### Getting the API key
 
@@ -48,7 +50,7 @@ Once you have created an account, you can get an API key from the [OpenAI dashbo
 
 ### Using the API
 
-To use the ChatGPT API, you need to set the API key in the environment variable OPENAI_API_KEY.
+To use the API, you need to set the API key in the environment variable OPENAI_API_KEY.
 
 From the command line on a booted system you can set this up as follows:
 
@@ -87,4 +89,3 @@ This will print something like the following:
 ```
 
 Hey, it knows stuff!
-
