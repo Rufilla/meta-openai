@@ -4,6 +4,11 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/LICENSE;md5=3f40d7994397109285ec7b81fdeb3
 
 inherit core-image
 
+IMAGE_INSTALL:append = " python3"
+IMAGE_INSTALL:append = " python3-pip"
+IMAGE_INSTALL:append = " python3-aiohttp"
+IMAGE_INSTALL:append = " python3-tqdm"
+IMAGE_INSTALL:append = " python3-requests"
 IMAGE_INSTALL:append = " python-openai"
 IMAGE_INSTALL:append = " openai-test-request"
 

@@ -36,3 +36,55 @@ Please see the corresponding sections below for details.
 
 Run 'bitbake-layers add-layer meta-openai'
 
+# Using the GPT API
+
+### Getting the API key
+
+To use the OpenAI APIs, you need to get an API key.
+
+To get an API key, you need to create an account on OpenAI's website.
+
+Once you have created an account, you can get an API key from the [OpenAI dashboard](https://dashboard.openai.com/).
+
+### Using the API
+
+To use the ChatGPT API, you need to set the API key in the environment variable OPENAI_API_KEY.
+
+From the command line on a booted system you can set this up as follows:
+
+```
+export OPENAI_API_KEY="<your openai api key>"
+```
+
+Once you have set the API key, you can use the GPT API as follows:
+
+```
+python3 /usr/bin/test_gpt.py
+```
+
+This will print something like the following:
+
+```
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\nAI Assistant: The capital of France is Paris."
+    }
+  ],
+  "created": 1677841174,
+  "id": "cmpl-6pxQMt3A4nWIjWVYqBDhjLhpwcjly",
+  "model": "text-davinci-003",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 35,
+    "total_tokens": 46
+  }
+}
+```
+
+Hey, it knows stuff!
+
