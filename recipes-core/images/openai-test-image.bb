@@ -11,6 +11,7 @@ IMAGE_INSTALL:append = " python3-tqdm"
 IMAGE_INSTALL:append = " python3-requests"
 IMAGE_INSTALL:append = " python-openai"
 IMAGE_INSTALL:append = " openai-test-request"
+IMAGE_INSTALL:append = " chatgpt-test-request"
 
 # Set the root password for the image
 EXTRA_IMAGE_FEATURES = "debug-tweaks ssh-server-openssh"

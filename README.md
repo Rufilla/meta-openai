@@ -38,9 +38,9 @@ Please see the corresponding sections below for details.
 
 Run 'bitbake-layers add-layer meta-openai'
 
-# Using the Davinci GPT 3.0 API
+# Using the Layer
 
-### Getting the API key
+## Getting the OpenAI API key
 
 To use the OpenAI APIs, you need to get an API key.
 
@@ -48,7 +48,62 @@ To get an API key, you need to create an account on OpenAI's website.
 
 Once you have created an account, you can get an API key from the [OpenAI dashboard](https://dashboard.openai.com/).
 
-### Using the API
+
+## Using the ChatGPT API
+
+The ChatGPT API allows access to ChatGPT, a conversational agent that can chat with you using natural language.
+
+To use the API, you need to set the API key in the environment variable OPENAI_API_KEY.
+
+From the command line on a booted system you can set this up as follows:
+
+```
+export OPENAI_API_KEY="<your openai api key>"
+```
+
+Once you have set the API key, you can use the GPT API as follows:
+
+```
+python3 /usr/bin/test_chatgpt.py
+```
+
+This will print something like the following:
+
+```
+# python3 test-chatgpt.py 
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Orange who?",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1677845696,
+  "id": "chatcmpl-6pybIsrUEg11UaAEErIDND8fKJXyU",
+  "model": "gpt-3.5-turbo-0301",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 5,
+    "prompt_tokens": 38,
+    "total_tokens": 43
+  }
+}
+```
+
+Showing that one of the most important developments in computer science this millenia can be the recipient of a very poor knock knock joke :-)
+
+More information on this new ChatGPT API can be found on the [OpenAI Cookbook](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_format_inputs_to_ChatGPT_models.ipynb).
+
+
+# Using the Davinci GPT 3.0 API
+
+The Davinci GPT 3.0 API allows access to Davinci, a powerful AI model that can perform a variety of tasks such as text generation, text classification, and more.
+
+Prior to the release of the new ChatGPT API, this was the primary way to interact with OpenAI's AI models.
 
 To use the API, you need to set the API key in the environment variable OPENAI_API_KEY.
 
