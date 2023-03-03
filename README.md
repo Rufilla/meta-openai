@@ -14,18 +14,14 @@ Yocto meta layers are repositories that contain related metadata (i.e. sets of i
 OpenAI APIs are a set of services that provide access to powerful artificial intelligence models developed by OpenAI. 
 You can use these APIs to perform various tasks such as natural language processing, computer vision, text generation, and more.
 
-## What is the Davinci GPT 3.0 API?
+### What models are available?
 
-This API allows access to Davinci, a powerful AI model that can perform a variety of tasks such as text generation, text classification, and more.
-
-## What is the ChatGPT API?
-
-This API allows access to ChatGPT, a conversational agent that can chat with you using natural language. 
+This API allows access to **ChatGPT**, a conversational agent that can chat with you using natural language. 
 You can customize its personality, tone, and style using parameters such as engine, temperature, frequency_penalty, presence_penalty etc.
 
-The ChatGPT API was officially released on 2nd March 2022 - so it's work in progress in this layer :-)
+The ChatGPT API was officially released on 2nd March 2022 - so this layer is very new!
 
-Please see the corresponding sections below for details.
+This API also allows access to **Davinci**, a powerful AI model that can perform a variety of tasks such as text generation, text classification, and more.
 
 ## Dependencies
 
@@ -33,12 +29,13 @@ Please see the corresponding sections below for details.
   * branch: Langdale
   * Add the meta-openembedded/meta-python layer to your build
 
-
 ## Adding the meta-openai layer to your build
 
-Run 'bitbake-layers add-layer meta-openai'
+```
+bitbake-layers add-layer meta-openai
+```
 
-# Using the Layer
+# Using the OpenAI Meta Layer
 
 ## Getting the OpenAI API key
 
@@ -101,7 +98,7 @@ More information on this new ChatGPT API can be found on the [OpenAI Cookbook](h
 
 # Using the Davinci GPT 3.0 API
 
-The Davinci GPT 3.0 API allows access to Davinci, a powerful AI model that can perform a variety of tasks such as text generation, text classification, and more.
+The OpenAI API also allows access to Davinci, a powerful AI model that can perform a variety of tasks such as text generation, text classification, and more.
 
 Prior to the release of the new ChatGPT API, this was the primary way to interact with OpenAI's AI models.
 
